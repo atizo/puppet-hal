@@ -12,7 +12,7 @@ class hal {
 
 class hal::base {
     package{hal:
-        require => present,
+        ensure => present,
     }
 
     service{haldaemon:
