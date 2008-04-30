@@ -15,7 +15,7 @@ class hal::base {
         require => present,
     }
 
-    service{:haldaemon:
+    service{haldaemon:
         ensure => running,
         enable => true,
         hasstatus => true,
